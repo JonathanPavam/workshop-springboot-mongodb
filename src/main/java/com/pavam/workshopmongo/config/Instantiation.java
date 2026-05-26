@@ -2,7 +2,6 @@ package com.pavam.workshopmongo.config;
 
 import com.pavam.workshopmongo.domain.User;
 import com.pavam.workshopmongo.repository.UserRepository;
-import com.pavam.workshopmongo.resources.UserResources;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.context.annotation.Configuration;
