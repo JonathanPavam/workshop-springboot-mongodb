@@ -1,11 +1,9 @@
-package com.pavam.workshopmongo.services.exception;
+package com.pavam.workshopmongo.services;
 
 import com.pavam.workshopmongo.domain.Post;
-import com.pavam.workshopmongo.domain.User;
 
-import com.pavam.workshopmongo.dto.UserDTO;
 import com.pavam.workshopmongo.repository.PostRepository;
-import com.pavam.workshopmongo.repository.UserRepository;
+import com.pavam.workshopmongo.services.exception.ObjectNotFoundException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -24,6 +22,9 @@ public class PostService {
         return post;
     }
 
+    public List<Post> findByTitle(String text){
+        return repository.findByTitleContaining(text);
+    }
 
 
 
